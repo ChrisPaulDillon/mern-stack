@@ -5,10 +5,10 @@ const WorkoutForm = () => {
   //@ts-ignore
   const { dispatch } = useWorkoutsContext();
 
-  const [title, setTitle] = useState("");
-  const [load, setLoad] = useState("");
-  const [reps, setReps] = useState("");
-  const [error, setError] = useState(null);
+  const [title, setTitle] = useState<string>("");
+  const [load, setLoad] = useState<string>("");
+  const [reps, setReps] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
   const [emptyFields, setEmptyFields] = useState<any[]>([]);
 
   const handleSubmit = async (e) => {
